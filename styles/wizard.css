@@ -1,0 +1,25 @@
+wizard .next_button {
+  display: block;
+}
+
+wizard .completed .next_button {
+  display: none;
+}
+
+wizard .expanded .next_button {
+  display: none;
+}
+
+wizard step {
+  display: block;
+  border-bottom: solid 1px transparent;
+}
+
+wizard .scrolled {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 5;
+}
+
