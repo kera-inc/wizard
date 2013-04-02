@@ -5,6 +5,6 @@ describe('my app', function() {
   });
 
   it('should display the home page', function() {
-    expect(element('#step1').text()).toMatch('Step 1');
+    expect(element('#step1').text()).toMatch('Step 2');
   });
 });
