@@ -15,6 +15,14 @@ wizard step {
   border-bottom: solid 1px transparent;
 }
 
+wizard .wizard_steps {
+  display: none;
+}
+
+wizard .wizard_steps.active {
+  display: block;
+}
+
 wizard .scrolled {
   position: fixed;
   top: 0;

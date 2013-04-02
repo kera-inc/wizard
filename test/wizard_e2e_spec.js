@@ -49,7 +49,7 @@ describe('my app', function() {
         });
 
         it('reveals the second step', function() {
-          expect( element('#step2').css('display') ).toEqual('block');
+          expect( element('#step2').css('display') ).not().toEqual('none');
         });
 
         it('adds completed class to the first step', function() {
@@ -72,7 +72,8 @@ describe('my app', function() {
 
   describe('an inactive wizard', function() {
     it('shows all steps by default', function() {
-      expect( element('#wizard2step2').css('display') ).toEqual('block');
+      expect( element('#wizard2step2').css('display') ).not().toEqual('none');
+
     });
   });
 });
