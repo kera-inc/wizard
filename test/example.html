@@ -11,16 +11,36 @@
 </head>
 
 <script>
-  angular.module('app', ['kera-inc/wizard']);
+  var app = angular.module('app', ['kera-inc/wizard']);
+
+  app.controller('MyCtrl', function($scope) {
+    $scope.completed = function() {
+      $scope.isCompleted = true;
+    }
+  });
+
 </script>
 
-<body ng-app="app">
-  <wizard active="true">
-    <step label="Step 1">
-      <p id="step1">Step 1</p>
+<body ng-app="app" ng-controller="MyCtrl">
+  <input type="text" ng-model="someModel" />
+
+  <span id="isCompleted">{{ isCompleted }}</span>
+
+  <wizard id="wizard1" active="true">
+    <step id="step1" label="Step 1" completed="completed()">
+      <p>Step 1</p>
     </step>
-    <step label="Step 2">
-      <p>Step 2</p>
+    <step id="step2" label="Step 2" nav-label="Step 2 Nav Label">
+      <span id="step2Content">{{ someModel }}</span>
+    </step>
+  </wizard>
+
+  <wizard id="wizard2" active="false">
+    <step>
+      <p>Wizard 2 Step 1</p>
+    </step>
+    <step id="wizard2step2">
+      <p>Wizard 2 Step 2</p>
     </step>
   </wizard>
 </body>
