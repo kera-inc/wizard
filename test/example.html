@@ -1,0 +1,28 @@
+<!doctype html>
+<html>
+<head>
+  <title>HELLO WORLD!</title>
+  <script src="/test/vendor/angular.min.js"></script>
+  <script src="/build/build.js"></script>
+  <link href="/build/build.css" media="all" rel="stylesheet" type="text/css" />
+  <script>
+    require('wizard');
+  </script>
+</head>
+
+<script>
+  angular.module('app', ['kera-inc/wizard']);
+</script>
+
+<body ng-app="app">
+  <wizard active="true">
+    <step label="Step 1">
+      <p id="step1">Step 1</p>
+    </step>
+    <step label="Step 2">
+      <p>Step 2</p>
+    </step>
+  </wizard>
+</body>
+</html>
+

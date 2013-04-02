@@ -7,12 +7,8 @@ basePath = '.';
 
 // list of files / patterns to load in the browser
 files = [
-  MOCHA,
-  MOCHA_ADAPTER,
-  'mocha_config.js',  
-  'vendor/chai.js',
-  'vendor/sinon.js',
-  '../build/build.js',
+  ANGULAR_SCENARIO,
+  ANGULAR_SCENARIO_ADAPTER,
   '**/*_spec.js',
 ];
 
@@ -60,6 +56,7 @@ autoWatch = false;
 browsers = ['Chrome'];
 
 
+
 // If browser does not capture in given timeout [ms], kill it
 captureTimeout = 5000;
 
@@ -67,3 +64,7 @@ captureTimeout = 5000;
 // Continuous Integration mode
 // if true, it capture browsers, run tests and exit
 singleRun = false;
+
+proxies = {
+  '/': 'http://localhost:8000/'
+};
