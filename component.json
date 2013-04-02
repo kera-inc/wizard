@@ -1,0 +1,20 @@
+{
+  "name": "wizard",
+  "version": "0.0.1",
+  "dependencies": {
+    "ForbesLindesay/booting-sub-nav": "*",
+    "component/jquery": "1.8.2",
+    "component/underscore": "*"
+  },
+
+  "scripts": [
+    "index.js",
+    "lib/wizard.js",
+    "lib/wizard_ctrl.js",
+    "lib/wizard_step.js"
+  ],
+
+  "styles": [
+    "styles/wizard.css"
+  ]
+}
