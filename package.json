@@ -4,7 +4,7 @@
   "author": "Kera Software Inc <services@kera.io>",
   "private": true,
   "devDependencies": {
-    "component-builder": "0.6.3",
+    "component-builder": "0.12.0",
     "testacular": "0.4.0",
     "phantomjs": "0.2.x",
     "http-server": "0.5.3"
